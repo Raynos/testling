@@ -32,7 +32,7 @@ stream.write = function (msg) {
 
     if (typeof msg === "string") {
         var suiteLi = document.createElement("li")
-        suiteLi.classList.add("suite")
+        suiteLi.className += " suite"
         var h1 = document.createElement("h1")
         h1.textContent = msg
         suiteLi.appendChild(h1)
@@ -49,19 +49,19 @@ stream.write = function (msg) {
     }
 
     var testLi = document.createElement("li")
-    testLi.classList.add("test")
+    testLi.className += " test"
     var h2 = document.createElement("h2")
     h2.textContent = msg.name
     testLi.appendChild(h2)
 
     if (msg.ok) {
-        testLi.classList.add("pass")
+        testLi.className += " pass"
         passes++
         passesEm.textContent = passes
     } else {
-        testLi.classList.add("fail")
+        testLi.className += " fail"
         var error = document.createElement("pre")
-        error.classList.add("error")
+        error.className += " error"
         error.textContent = msg.stack && msg.stack.join("\n")
         testLi.appendChild(error)
         failures++
