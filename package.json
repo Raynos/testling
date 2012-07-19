@@ -1,5 +1,5 @@
 {
-    "name" : "testling",
+    "name" : "raynos-testling",
     "description" : "write tests for browser code",
     "version" : "0.2.6",
     "repository" : {
@@ -22,6 +22,7 @@
         "test" : "test"
     },
     "scripts" : {
+        "install" : "browserify node_modules/schoolbus/proxy.js -o static/proxy.js"
     },
     "bundledDependencies": ["schoolbus"],
     "dependencies" : {
