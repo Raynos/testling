@@ -22,7 +22,6 @@
         "test" : "test"
     },
     "scripts" : {
-        "install" : "browserify node_modules/schoolbus/proxy.js -o static/proxy.js"
     },
     "bundledDependencies": ["schoolbus"],
     "dependencies" : {
