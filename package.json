@@ -1,7 +1,7 @@
 {
     "name" : "raynos-testling",
     "description" : "write tests for browser code",
-    "version" : "0.2.6",
+    "version" : "0.2.7",
     "repository" : {
         "type" : "git",
         "url" : "git://github.com/substack/testling.git"
@@ -43,6 +43,17 @@
         "promzard" : "~0.1.5",
         "pw" : "~0.0.3"
     },
+    "files": [
+        "bin",
+        "browser",
+        "example",
+        "lib",
+        "browser.js",
+        "package.json",
+        "README.markdown",
+        "index.js",
+        "node_modules/schoolbus"
+    ],
     "engines" : {
         "node" : ">=0.6"
     },
