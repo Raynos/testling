@@ -3,7 +3,7 @@ var render = require('./render');
 var JSONStream = require('JSONStream');
 
 var push = JSONStream.stringify();
-push.pipe(require('shoe')('/push'));
+//push.pipe(require('shoe')('/push'));
 
 var es = require('event-stream');
 var stream = module.exports = (function () {
