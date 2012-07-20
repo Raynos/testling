@@ -1,5 +1,5 @@
 {
-    "name" : "raynos-testling",
+    "name" : "testling",
     "description" : "write tests for browser code",
     "version" : "0.2.7",
     "repository" : {
